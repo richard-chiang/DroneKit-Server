@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drone</title>
+</head>
+<body>
+<h1> Add Drone </h1>
+<div>Example port: 5760 for dronekit-sitl copter</div>
+<form method="POST" action=".">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</body>
+</html>
